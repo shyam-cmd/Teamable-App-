@@ -8,4 +8,4 @@ This project is to add employee profile with nice picture
 
 ### To Package the application and execute
 
-npm pack
+``` npm pack ```
