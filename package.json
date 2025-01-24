@@ -1,6 +1,6 @@
 {
     "name": "hi-vue-app",
-    "version": "0.1.0",
+    "version": "1.0.1",
     "dependencies": {
        
         "core-js": "3.40.0",
