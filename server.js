@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
+const path = require('path');
 const { MongoClient } = require("mongodb");
 const { isEmptyPayload, isInvalidEmail } = require("./validator");
 
@@ -15,7 +16,7 @@ const dbName = "myProject";
 const collName = "users";
 
 app.use(bodyParser.json());
-app.use("/", express.static(__dirname + "/dist"));
+app.use("/", express.static(path.join(__dirname + "/dist")));
 
 app.get("/get-profile", async function (req, res) {
   // connect to database
