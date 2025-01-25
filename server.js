@@ -9,7 +9,7 @@ const { isEmptyPayload, isInvalidEmail } = require("./validator");
 // import { MongoClient } from 'mongodb'
 
 // Connection URL
-const url = "mongodb://myapp:mysecretpass@localhost:27017?authSource=myProject";
+const url = "mongodb://myapp:mysecretpass@18.142.128.26:27017?authSource=myProject";
 const client = new MongoClient(url);
 
 const dbName = "myProject";
